@@ -1,0 +1,261 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Maxime DURAND</title>
+    <link rel="stylesheet" href="{% static 'Portfolio\style.css' %}">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home_</a></li>
+            <li><a href="#who_am_i">Who_Am_I_?_</a></li>
+            <li><a href="#creations">Creations_</a></li>
+            <li><a href="#experiances">Experiances_</a></li>
+            <li><a href="#contact_me">Contact_me_</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="neon_title">Maxime Durand</h1>
+        <h2 class="neon_title tilt">FullStack Developper</h2>
+        <img src="{% static 'images/mouse.png' %}" alt="Mouse animation">
+    </section>
+
+    <section id="who_am_i">
+
+        <h3 class="neon_title_alt tilt profil_title">Profil</h3>
+        <div id="who_am_i_first">
+            <div id="profil">
+                <p>Extremly motivated for increase personnal competences and evolve professionnaly. <br>
+                Young man of 22 years old, who learn basics of Web programming by himself. <br>
+                License holder. </p>
+            </div>
+            <div id="resume">
+                <img src="{% static 'images/resume.jpg' %}" alt="Resume" id="resume_pdf">
+                <button><a href="{% static 'resume.pdf' %}" target="_blank">Download my Resume</a></button>
+            </div>
+        </div>
+
+        <div id="certification">
+            <h3 class="neon_title_alt tilt">Certification</h3>
+
+            <div id="progress_bar_container">
+                <div id="progress_bar">
+                    <div id="status_bar">
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="cnfdi">
+                <div id="icons_cnfdi">
+                    <img src="{% static 'icons/htmlcssjs.png' %}" alt="Logo HTML/CSS/JS" class="logo_normalize">
+                    <img src="{% static 'icons/php.png' %}" alt="Logo PHP" class="logo_normalize">
+                    <img src="{% static 'icons/sql.png' %}" alt="Logo MySQL" class="logo_normalize">
+                </div>
+
+                <div id="content_cnfdi">
+                    <h3 class="neon_title_alt">2020</h3>
+                    <p>CNFDI Formation <br>
+                    My first web formation, learning of first languages (HTML/CSS/JS) and good web practices <br>
+                    Very end of formation deal with BackEnd languages (PHP/MySQL).</p>
+                </div>
+            </div>
+            
+            <div id="udemy_csharp">
+                <div id="udemy_csharp_content">
+                    <h3 class="neon_title_alt">2021</h3>
+                    <p>My First formation which was not center in a web technologie. <br>
+                    In the very first part, I learn C# basics and console. Later, I saw the basics of .NET applications. <br>
+                    I got a certificat when i finish this formation.</p>
+                </div>
+                <div id="udemy_csharp_icons">
+                    <img src="{% static 'icons/csharp.png' %}" alt="logo C#" class="logo_normalize">
+                    <img src="{% static 'icons/.net.png' %}" alt="logo .NET" class="logo_normalize">
+                </div>
+            </div>
+
+            <div id="udemy_python">
+                <div id="udemy_python_icons">
+                    <img src="{% static 'icons/python.png' %}" alt="Logo Python" class="logo_normalize">
+                    <img src="{% static 'icons/django.png' %}" alt="Logo Django" class="logo_normalize">
+                </div>
+                <div id="udemy_python_content">
+                    <h3 class="neon_title_alt">2022</h3>
+                    <p>It was my favorite formation on my favorite language : Python <br>
+                    This formation had a total duration of 60 hours and deal with a lot of subjects where python can help : Big Data, Application and Web were the 3 most importants. <br>
+                    It was also during that formation that i learn the basics of Django. <br>
+                    I got a certificat when I finish this formation.</p>
+                </div>
+            </div>
+
+            <div id="udemy_django">
+                <div id="udemy_django_content">
+                    <h3 class="neon_title_alt">2023</h3>
+                    <p>This Formation allowed me to confirm my knowledge in Django Framework. <br>
+                    I learn to create and interact with Models and Databases. I also learn to create Vues and Urls <br>
+                    I set up forms, and how to interact with them or an admin side in a site. <br>
+                    Finally this formation allowed me to create a little blog (that actually work) and deploy it in Python everywhere. <br>
+                    I present you this site below on this site. <br>
+                    I got a certificat when I finish this formation</p>
+                </div>
+                <div id="udemy_django_icons">
+                    <img src="{% static 'icons/django.png' %}" alt="Logo Django" class="logo_normalize">
+                    <img src="{% static 'icons/python.png' %}" alt="Logo Django" class="logo_normalize">
+                </div>
+            </div>
+
+            <div id="udemy_aws">
+                <div id="udemy_aws_icons">
+                    <img src="{% static 'icons/aws_basic.png' %}" alt="logo certificat AWS Fondamentals" class="logo_normalize" style="width: 25% !important">
+                    <img src="{% static 'icons/aws_architect.png' %}" alt="logo certificat AWS Fondamentals" class="logo_normalize" style="width: 25% !important">
+                </div>
+                <div id="udemy_aws_content">
+                    <h3 class="neon_title_alt">2023</h3>
+                    <p>This formation is about Amazon Web Solutions. <br>
+                    It Deal with all the solution given by AWS to gain in knowledge and at the end allowed me to set up entirely a cloud infrastructure <br>
+                    It's a quite long formation of 31 hours that I am always doing</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="creations">
+        <h3 class="neon_title_alt tilt">Creations</h3>
+        <div id="creation_container">
+            <div class="creation_card" style="background: url({% static 'images/creations/scossa.png' %})" id="scossa">
+                <div class="creation_card_content">
+                    My first Web site realise with Wordpress
+                </div>
+                <a href="https://cafelescossaparis.com/" target="_blank">
+                    <div class="creation_card_title" id="scossa_title">
+                        <p class="neon_title_h4">Le Scossa</p>
+                    </div>
+                </a>
+            </div>
+            <div class="creation_card" style="background: url({% static 'images/creations/notremenu.png' %})" id="scossa">
+                <div class="creation_card_content">
+                    A project of Online Menu, made for restaurants, the goal was to redirect to the menu directly throught a QR Code. <br>
+                    This site is a template and not a definitive one. <br>
+                    My part was front, made With JavaScript.
+                </div>
+                <a href="https://mimohca.com/" target="_blank">
+                    <div class="creation_card_title">
+                        <p class="neon_title_h4">Notre Menu</p>
+                    </div>
+                </a>
+            </div>
+            <div class="creation_card" style="background: url({% static 'images/creations/blogmax.png' %})" id="blogmax">
+                <div class="creation_card_content">
+                    My last Exercice on my Django Formation. It deals with many things I learn during my formation. <br>
+                    Like DB, or Urls, and is base on CRUD, to create, modify, or delete articles.
+                </div>
+                <a href="{% url 'posts:home' %}" target="_blank">
+                    <div class="creation_card_title">
+                        <p class="neon_title_h4">Max's Blog</p>
+                    </div>
+                </a>
+            </div>
+            <div class="creation_card" style="background: url({% static 'images/creations/dashboard.png' %})" id="blogmax">
+                <div class="creation_card_content">
+                    One of the last School Project I have done in My React School Formation. <br>
+                    We had a template of a Dashboard and have a full week to doing it. <br>
+                    This one have static datas and only use React. <br>
+                    (Unfortunatly only this page works)
+                </div>
+                <a href="https://happy-lichterman-8670ef.netlify.app/" target="_blank">
+                    <div class="creation_card_title">
+                        <p class="neon_title_h4">Dashboard</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="creation_card" style="background: url({% static 'images/creations/memory.png' %})" id="memory">
+                <div class="creation_card_content">
+                    A React project for my Work at Mohca, the goal was to had games on our Online Menu for Children during the wait. <br>
+                    This is an early version with non patch bugs and Numbers instead of Picture. <br>
+                    First select a difficulty and let's play ! One the game is over, reload the page to play again !
+                </div>
+                <a href="https://dreamy-bardeen-5149a7.netlify.app/" target="_blank">
+                    <div class="creation_card_title">
+                        <p class="neon_title_h4">Memory Game</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <p class="tilt" style="font-size: 25px">Unfortunatly, my very last school Project, a Restaurant interface is not available due to a Node.JS BackEnd. <br>
+        But i Would be very happy to show you this project by myself</p>
+    </section>
+
+    <section id="experiances">
+        <div id="experiances_container">
+            <h3 class="neon_title_alt tilt">Experiances</h3>
+            <div class="experiance" id="sg">
+                <div class="experiance_data">
+                    <h3 class="neon_title_h4">Société Générale</h3>
+                    <h4>February 2022- February 2023</h4>
+                </div>
+                <p>Web Apps developper - Creation of new features for Bank web apps. <br>
+                Use of Django (BackEnd) and React(FrontEnd). </p>
+            </div>
+
+            <div class="experiance" id="mohca">
+                <div class="experiance_data">
+                    <h3 class="neon_title_h4">Mohca</h3>
+                    <h4>February 2021- February 2022</h4>
+                </div>
+                <p>Web developper - Creation, Management and maintains from web sites created with Wordpress. <br>
+                Création of Online Menu with HTML/CSS/JS. <br>
+                Création of web templates with Adobe XD.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact_me">
+        <h3 class="neon_title_alt">Contact Me</h3>
+        <div id="contact_me_container">
+            <div id="my_links">
+                <div id="links">
+                    <div class="link">
+                        <img src="{% static 'icons/mail.png' %}" alt="Icon Mail" class="logo_normalize">
+                        <b>Maximerene.durand.pro@gmail.com</b>
+                    </div>
+                    <div class="link">
+                        <img src="{% static 'icons/linkedin.png' %}" alt="Icon LinkedIn" class="logo_normalize">
+                        <b><a href="https://www.linkedin.com/in/maxime-durand-2a5a46194/">My LinkedIn</a></b>
+                    </div>
+                </div>
+            </div>
+            <div id="contact_form">
+                <form method="post" action="{% static 'script/mail.php' %}">
+                    <h4>Or send me an Email !</h4>
+                    <div id="name_input">
+                        <input type="text" placeholder="FirstName" name="FirstName" id="FirstName" required>
+                        <input type="text" placeholder="LastName" name="LastName" id="LastName" required>
+                    </div>
+                    <input type="email" placeholder="Mail" name="Email" id="Email" required>
+                    <input type="textarea" placeholder="Your message..." name="Message" id="Message" required>
+                    <button type="submit">Send My message !</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        Website Made by Maxime DURAND
+    </footer>
+
+
+    <script src="{% static 'script/main.js'%}"></script>
+    <script src="{% static 'script/progress_bar.js'%}"></script>
+    <script src="{% static 'script/experiance.js'%}"></script>
+
+</body>
+</html>

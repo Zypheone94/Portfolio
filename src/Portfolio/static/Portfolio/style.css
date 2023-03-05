@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import 'blink.css';
+
+*{
+    margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.tilt {
+    font-family: 'Tilt Neon', cursive !important;
+}
+
+body {
+    background: linear-gradient(#222f3e, #e55039);
+    color: #f1f2f6;
+}
+
+nav {
+    width: 100%;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 1% 0 0.5% 0;
+
+    position: sticky;
+    top: 0;
+
+    backdrop-filter: blur(15px);
+    z-index: 3;
+}
+
+nav > ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 !important;
+
+    list-style: none;
+    font-family: 'Tilt Neon', cursive;
+    font-size: 18px;
+}
+
+nav > ul > li {
+    cursor: pointer;
+
+}
+
+nav > ul > li > a {
+    text-decoration: none !important;
+    color: white;
+        transition: .5s;
+
+}
+
+nav > ul > li > a:hover {
+    font-size: 21px;
+
+    text-shadow: 0 0 5px #ffa500,
+    0 0 15px #ffa500,
+    0 0 20px #ffa500,
+    0 0 40px #e55039,
+    0 0 60px #ff0000,
+    0 0 10px #e55039,
+    0 0 98px #e55039;
+
+    color: #fff6a9;
+}
+
+#home {
+    font-family: 'Tilt Neon', cursive;
+    height: 85vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 13%;
+
+}
+
+#home > h1 {
+    font-size: 100px;
+    letter-spacing: .2rem;
+}
+
+#home > img {
+    width: 30px;
+    position: relative;
+    top: 10%;
+
+    animation-duration: 2s;
+    animation-name: glissement;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+    z-index: 1;
+}
+
+@keyframes glissement {
+  from {
+    margin-top: 0;
+  }
+
+  to {
+    margin-top: 7%;
+  }
+}
+
+.neon_title {
+    text-shadow: 0 0 5px #ffa500,
+    0 0 15px #ffa500,
+    0 0 20px #ffa500,
+    0 0 40px #e55039,
+    0 0 60px #ff0000,
+    0 0 10px #e55039,
+    0 0 98px #e55039;
+
+    color: #fff6a9;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+    animation: blink 7s infinite;
+    -webkit-animation: blink 7s infinite;
+}
+
+.neon_title_alt {
+    text-shadow: 0 0 5px #ffa500,
+    0 0 15px #ffa500,
+    0 0 20px #ffa500,
+    0 0 40px #e55039,
+    0 0 60px #ff0000,
+    0 0 10px #e55039,
+    0 0 98px #e55039;
+
+    font-size: 50px;
+    text-decoration: underline;
+
+    color: #fff6a9;
+    animation: blink 6.5s infinite;
+    -webkit-animation: blink 6.5s infinite;
+}
+
+#who_am_i {
+    padding-top: 5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#who_am_i_first {
+    height: 75vh;
+    margin: 0 10%;
+    margin-top: 5%;
+
+
+    display: flex;
+}
+
+.profil_title {
+    font-size: 50px;
+    margin: 0 10%;
+
+}
+
+#profil > p {
+    font-size: 25px;
+}
+
+#resume {
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+}
+
+
+#resume > img {
+    cursor: pointer;
+    transition: .3s;
+    min-width: 100%;
+    position: relative;
+    right: 0;
+    z-index: 2;
+}
+
+#resume > img:hover {
+    min-width: 120%;
+}
+
+#resume > button {
+    background: transparent;
+    border: 3px solid #e55039;
+    border-radius: 7px;
+    font-size: 20px;
+
+    margin-top: 10%;
+}
+
+#resume > button > a {
+    text-decoration: none;
+    color: #e55039;
+}
+
+
+
+#certification {
+    height: 290vh;
+    margin: 0 10%;
+}
+
+#certification > h3 {
+    font-size: 50px;
+}
+
+#progress_bar_container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+#progress_bar {
+    width: 25px;
+    height: 250vh;
+}
+
+#cnfdi {
+
+    position: relative;
+    top: -85%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#icons_cnfdi{
+    max-width: 50%;
+    height: fit-content;
+}
+
+#content_cnfdi {
+    max-width: 50%;
+    text-align: right;
+}
+
+#content_cnfdi > p {
+    margin-top: 5%;
+}
+
+.logo_normalize {
+    width: 22%;
+
+    vertical-align: middle;
+    margin: 3%;
+}
+
+#udemy_csharp {
+    position: relative;
+
+    top: -80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#udemy_csharp_content {
+    max-width: 40%;
+}
+
+#udemy_csharp_content > p {
+    margin-top: 5%;
+}
+
+#udemy_csharp_icons{
+    max-width: 60%;
+
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+
+#udemy_python {
+    position: relative;
+
+    top: -75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#udemy_python_icons {
+    max-width: 60%;
+
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+#udemy_python_content {
+    max-width: 40%;
+    text-align: right;
+}
+
+#udemy_python_content > p {
+    margin-top: 5%;
+}
+
+
+#udemy_django {
+    position: relative;
+
+    top: -70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#udemy_django_content {
+    max-width: 40%;
+}
+
+#udemy_django_content > p {
+    margin-top: 5%;
+}
+
+#udemy_django_icons {
+    max-width: 60%;
+
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+
+#udemy_aws {
+    position: relative;
+
+    top: -65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#udemy_aws_icons {
+    max-width: 60%;
+
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+#udemy_aws_content {
+    max-width: 40%;
+}
+
+#udemy_aws_content > p {
+    margin-top: 5%;
+}
+
+
+
+#soft_skill_container {
+    margin: 0 10%;
+}
+
+.neon_title_h4 {
+    text-shadow: 0 0 5px #000000,
+    0 0 15px #000000,
+    0 0 20px #000000,
+    0 0 40px #000000,
+    0 0 60px #000000,
+    0 0 10px #000000,
+    0 0 98px #000000;
+
+    font-size: 20px;
+
+    color: #fff6a9;
+    animation: blink 6.5s infinite;
+    -webkit-animation: blink 6.5s infinite;
+    font-family: 'Tilt Neon', cursive;
+}
+
+
+#creations {
+    margin: 0 10% 10% 10%;
+    padding-top: 5%;
+}
+
+#creation_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 33.333333%;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.creation_card {
+    background: black;
+    width: 40%;
+    height: 40vh;
+
+    background-size: contain !important;
+    background-position: center;
+    filter: brightness(70%);
+
+    transition: .3s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    margin-bottom: 10%;
+
+}
+
+.creation_card:hover {
+    filter: brightness(100%);
+}
+
+.creation_card_title {
+    height: 120%;
+    width: 100%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222f3e;
+}
+
+.creation_card_content {
+    opacity: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    height: 100%;
+    backdrop-filter: blur(0);
+    animation: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    filter: brightness(1);
+}
+
+.creation_card_content:hover {
+    color: black;
+    opacity: 1;
+    backdrop-filter: blur(15px);
+    filter: brightness(2);
+}
+
+
+#experiances_container {
+    margin: 5% 10% 0 10%;
+    padding-top: 5%;
+    font-family: 'Tilt Neon', cursive;
+}
+
+#experiances_container > h3{
+    margin-bottom: 5%;
+}
+
+.experiance_data > h3{
+    font-size: 25px;
+}
+
+.experiance_data > h4{
+    margin-top: 3%;
+}
+
+.experiance_data{
+    margin-top: 2%;
+}
+
+.experiance > p {
+    margin-top: 1%;
+    font-size: 20px;
+}
+
+#mohca {
+    text-align: right;
+}
+
+
+
+#contact_me {
+    padding-top: 5%;
+    font-family: 'Poppins', sans-serif;
+    margin: 5% 10% 10%; 10%;
+
+}
+
+#contact_me_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.link > b > a {
+    text-decoration: none;
+    color: white;
+}
+
+#contact_form {
+    min-width: 40%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#name_input {
+       display: flex;
+       justify-content: space-between;
+}
+
+#name_input > input{
+    width: 40%;
+}
+
+input {
+    margin: 5% 0;
+    height: 40px;
+
+    border: 3px dashed #222f3e;
+    border-radius: 10px;
+    background: transparent;
+    color: #222f3e;
+
+}
+
+input::placeholder {
+    color: #222f3e;
+}
+
+form > button {
+    height: 40px;
+
+    border: none;
+    border-radius: 10px;
+    background: #222f3e;
+    color: #e55039;
+
+    cursor: pointer;
+}
+
+
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: #222f3e;
+
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e55039;
+}
+
+
+
+

@@ -1,0 +1,12 @@
+chart color :
+
+background = #122532
+title = Orange glow
+textes =
+
+
+
+Font :
+
+titles = Tilt Néon
+texts = Poppins
